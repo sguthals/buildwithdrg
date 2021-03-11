@@ -10,3 +10,5 @@ You can see the issue here:
 The issue is that there is no way to update the temperature into Farenheight. 
 
 This will be tracked on the [Weather Widget](https://github.com/drguthals/buildwithdrg/projects/1) project.
+
+This will need to be embedded in a Google site and updated once a day.
