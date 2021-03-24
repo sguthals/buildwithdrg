@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="hello world" />
+  <Content type="html">
+  <![CDATA[
+    <script type="text/javascript">
+    var siteURL = "https://sites.google.com/sandi.net/csweather";
+    
+    </script>
+  ]]>
+  </Content>
+</Module>
