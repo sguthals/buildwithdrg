@@ -1,0 +1,12 @@
+clear sky (day) 	01d.png 	
+clear sky (night) 	01n.png 	
+few clouds (day) 	02d.png 	
+few clouds (night) 	02n.png 	
+scattered clouds 	03d.png 	
+broken clouds 	04d.png 	
+shower rain 	09d.png 	
+rain (day time) 	10d.png 	
+rain (night time) 	10n.png 	
+thunderstorm 	11d.png 	
+snow 	13d.png 	
+mist 	50d.png 	
