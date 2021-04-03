@@ -4,20 +4,39 @@
         <Title>Weather Widget</Title>
     </head>
     <body>
-        <p id="tempF" hidden><b>{{ tempF }}</b>&#176;F</p>
-        <p id="airQ" hidden><b>{{ airQ }}</b> US AQI</p>
+        <span id="City" hidden><b>{{ city }}</b></span>
+        <span id="State" hidden><b>{{ state }}</b></span>
+        <span id="Date" hidden><b> {{ date }}</b></span>
+        <span id="tempF" hidden><b>{{ tempF }}</b>&#176;F</span>
+        <span id="airQ"  hidden><b>{{ airQ }}</b></span>
+        <span id="aQLabel" hidden>US AQI</span>
         <canvas id="wwCanvas" width="500" height="200" style="border:2px solid black;border-radius: 15px;"></canvas>
         <script>
             var canvas = document.getElementById("wwCanvas");
             var ctx = canvas.getContext("2d");
             var tempf = document.getElementById("tempF");
             var airq = document.getElementById("airQ");
-            airq.style.visibility = "vissible";
+            var aQLabel = document.getElementById("aQLabel");
+            var currCity = document.getElementById("City");
+            var currState = document.getElementById("State"); 
+            var currDate = document.getElementById("Date");
+            airq.style.visibility = "visible";
             airq = airq.innerText;
+            aQLabel.style.visibility = "visible";
+            aQLabel = aQLabel.innerText;
             tempf.style.visibility = "visible";
             tempf = tempf.innerText;
+            currCity.style.visibility = "visible";
+            currCity = currCity.innerText;
+            currState.style.visibility = "visible";
+            currState = currState.innerText;
+            currDate.style.visibility = "visible";
+            currDate = currDate.innerText;
             ctx.font = "25px Arial";
+            ctx.fillText(currCity, 190, 50);
+            ctx.fillText(currState, 190, 80);
             ctx.fillText(airq, 20, 170);
+            ctx.fillText(aQLabel, 10, 190);
             ctx.fillText(tempf, 250, 170);
             ctx.moveTo(165, 100);
             ctx.lineTo(165, 200);
