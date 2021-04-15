@@ -2,6 +2,7 @@
 <html>
     <head>
         <Title>Weather Widget</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
     <body>
         <span id="City" hidden><b>{{ city }}</b></span>
@@ -10,6 +11,7 @@
         <span id="tempF" hidden><b>{{ tempF }}</b>&#176;F</span>
         <span id="airQ"  hidden><b>{{ airQ }}</b></span>
         <span id="aQLabel" hidden>US AQI</span>
+        <span id="icon" hidden>{{ icon }}</span>
         <canvas id="wwCanvas" width="500" height="200" style="border:2px solid black;border-radius: 15px;"></canvas>
         <script>
             var canvas = document.getElementById("wwCanvas");
@@ -20,6 +22,9 @@
             var currCity = document.getElementById("City");
             var currState = document.getElementById("State"); 
             var currDate = document.getElementById("Date");
+            var ic = document.getElementById("icon");
+            ic.style.visibility = "visible";
+            ic = ic.innerText;
             airq.style.visibility = "visible";
             airq = airq.innerText;
             aQLabel.style.visibility = "visible";
@@ -44,6 +49,8 @@
             ctx.moveTo(320, 100);
             ctx.lineTo(320, 200);
             ctx.stroke();
+            ctx.font = '30px "FontAwesome"';
+            ctx.fillText(ic, 400, 170);
         </script>
     </body>
 </html>

@@ -36,8 +36,9 @@ def get_local_tempF():
     tempC = res["current"]["weather"]["tp"]
     airQ = res["current"]["pollution"]["aqius"]
     ic = res["current"]["weather"]["ic"]
+    icon = config["icon_codes"][ic]
     tempF = celsius_to_fahrenheit(tempC)
-    return render_template("index.html", tempF=tempF, airQ=airQ, ic=ic, city=city, state=state, date=date)
+    return render_template("index.html", tempF=tempF, airQ=airQ, icon=icon, city=city, state=state, date=date)
 
 if __name__ == "__main__":
     host = config["network"]["host"]
