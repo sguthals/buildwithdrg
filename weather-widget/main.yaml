@@ -1,0 +1,4 @@
+runtime: python39
+handlers:
+- url: /.*
+  static_dir: static
