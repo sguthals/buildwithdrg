@@ -1,2 +1,4 @@
+test.txt
+test.py
 venv/*
-source.html
+*/__pycache__

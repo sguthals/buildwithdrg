@@ -1,0 +1,16 @@
+network:
+  host: "127.0.0.1"
+  port: 56978   
+icon_codes:
+  01d: "\uf185"
+  01n: "\uf699"
+  02d: "\uf6c4"
+  02n: "\uf6c3"
+  03d: "\uf0c2"
+  04d: "\uf0c2"
+  09d: "\uf740"
+  10d: "\uf743"
+  10n: "\uf73c"
+  11d: "\uf0e7"
+  13d: "\uf2dc"
+  50d: "\uf73d"
